@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Test Code</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Sunshiney' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<script type="text/javascript">
+
+var meowMix = new Audio('sounds/meowMix.mp3');
+var mmLength = meowMix.duration;
+
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+
+
+console.log(new Date());
+console.log('Dude!' + mmLength + mmLength.NaN);
+sleep(mmLength);
+console.log(new Date());
+console.log('Duuuude!');
+
+</script>
+</body>
+</html>
